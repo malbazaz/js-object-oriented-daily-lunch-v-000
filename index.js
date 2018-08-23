@@ -20,9 +20,7 @@ class Neighborhood{
       })
     }
     meals(){
-      return store.meals.filter(meal =>{
-        return meal.neighborhoodId === this.id;
-      })
+// returns unique list of meals that have been ordered
     }
 }
 class Customer{
