@@ -90,7 +90,7 @@ class Meal{
       //
 static byPrice(){
   return store.meals.slice().sort(function(num1,num2){
-            return num1.price - num2.price;
+            return num2.price - num1.price;
           }) }
           // a class method that orders meal instance by price in
           // descending order - user static keyword.
