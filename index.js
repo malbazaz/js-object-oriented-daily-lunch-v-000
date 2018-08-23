@@ -79,7 +79,7 @@ class Meal{
             // debugger;
             //     return delivery.customerId === this.id;
             })
-
+        }
       // const notUniqueCust = store.customers.filter(cust=>{
       //       debugger;
       //       return cust.mealId === this.id;
@@ -95,7 +95,7 @@ class Meal{
       //     })
           // a class method that orders meal instance by price in
           // descending order - user static keyword.
-        }
+
 }
 
 class Delivery{
