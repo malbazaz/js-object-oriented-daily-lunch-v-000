@@ -42,13 +42,6 @@ class Customer{
       })
     }
     meals(){
-    const notUniqueMeals = store.meals.filter(meal =>{
-        store.deliveries.filter(delivery=>{
-          if(deliveryId === this.id){
-            return meal.customerId === this.id;
-          }
-        })
-      }.bind(this))
     }
     totalSpend(){
       // returns the total amt that cust spent on food
