@@ -41,7 +41,8 @@ class Customer{
         return meal.customerId === this.id;
       })
     }
-    totalSpend(){}
+    totalSpend(){
+    }
 }
 
 class Meal{
