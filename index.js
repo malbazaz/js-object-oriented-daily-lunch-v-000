@@ -74,6 +74,9 @@ class Meal{
       return uniqueCust;
     }
     static byPrice(){
+      store.meals.sort(function(a,b){
+        a - b;
+      })
       // a class method that orders meal instance by price in
       // descending order - user static keyword.
 
