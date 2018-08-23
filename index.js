@@ -46,6 +46,7 @@ class Customer{
         return meal.customerId === this.id;
       })
     const uniqueMeals = [...new Set(notUniqueMeals)]
+    debugger;
     return uniqueMeals;
     }
     totalSpend(){
