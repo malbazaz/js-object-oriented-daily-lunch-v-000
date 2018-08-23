@@ -47,13 +47,12 @@ class Customer{
           debugger;
               return delivery.customerId === this.id;
           }.bind(this))
-
       },0)
     }
 
     totalSpend(){
       // returns the total amt that cust spent on food
-      this.meals.reduce(function(total,m){
+    return  this.meals.reduce(function(total,m){
         return m.price + total
       },0)
     }
