@@ -67,8 +67,8 @@ class Meal{
     }
     customers(){
       const notUniqueCust = store.customers.filter(cust=>{
-        return cust.mealId === this.id;
             debugger;
+        return cust.mealId === this.id;
       })
       const uniqueCust = [...new Set(notUniqueCust)];
       return uniqueCust;
