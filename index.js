@@ -42,10 +42,10 @@ class Customer{
       })
     }
     meals(){
-      return store.meals.filter(meal=>{
-        debugger;
-        return meal.customerId === this.id;
-      })
+      // return store.meals.filter(meal=>{
+      //   debugger;
+      //   return meal.customerId === this.id;
+      // })
     }
 
     totalSpend(){
