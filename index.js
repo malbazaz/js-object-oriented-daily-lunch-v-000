@@ -22,7 +22,7 @@ class Neighborhood{
       })
     }
     meals(){
-      return this.deliveries().map(function(delivery){
+      const notUniqueMeals = this.deliveries().map(function(delivery){
             return store.meals.find(function(meal){
               return meal.id === delivery.mealId
             })
