@@ -44,7 +44,7 @@ class Customer{
     meals(){
       return store.meals.filter(meal=>{
         return this.deliveries().find(function(delivery){
-
+          debugger;
               return delivery.customerId === this.id;
           }.bind(this))
       })
