@@ -48,6 +48,8 @@ class Customer{
               return delivery.customerId === this.id;
           }.bind(this))
       })
+
+      return newMeals;
     }
 
     totalSpend(){
