@@ -42,10 +42,11 @@ class Customer{
       })
     }
     meals(){
-        return this.deliveries().find(function(delivery){
-          debugger;
-              return delivery.customerId === this.id;
-          }.bind(this))
+        return this.deliveries().forEach(function(delivery){
+          delivery.meals.
+          // debugger;
+          //     return delivery.customerId === this.id;
+          })
     }
 
     totalSpend(){
