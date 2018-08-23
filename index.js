@@ -56,9 +56,10 @@ class Meal{
     })
   }
   customers(){
-    return store.customers.filter(cust=>{
+    const notUniqueCust = store.customers.filter(cust=>{
       return cust.mealId === this.id;
     })
+    return const uniqueCust = [...new Set(notUniqueCust)];
   }
   byPrice(){}
 }
