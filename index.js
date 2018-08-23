@@ -50,7 +50,11 @@ class Meal{
     this.price = price;
     this.id = ++mealId;
   }
-  deliveries(){}
+  deliveries(){
+    return store.deliveries.filter(delivery=>{
+      return delivery.mealId === this.id;
+    })
+  }
   customers(){}
   byPrice(){}
 }
