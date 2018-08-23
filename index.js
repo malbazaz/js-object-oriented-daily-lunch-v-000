@@ -43,7 +43,9 @@ class Customer{
     }
     meals(){
       return store.meals.filter(meal=>{
-        debugger;
+          meal.deliveries().filter(delivery=>{
+            return meal.delivery.customerId === this.id;
+          } )
         return meal.deliveries().customerId === this.id;
       })
     }
