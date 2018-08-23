@@ -73,9 +73,10 @@ class Meal{
       const uniqueCust = [...new Set(notUniqueCust)];
       return uniqueCust;
     }
-    byPrice(){
+    static byPrice(){
       // a class method that orders meal instance by price in
       // descending order - user static keyword.
+
     }
 }
 
