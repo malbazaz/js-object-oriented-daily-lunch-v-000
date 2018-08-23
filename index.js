@@ -40,6 +40,7 @@ class Customer{
       })
     }
     totalSpend(){
+      // returns the total amt that cust spent on food
     }
 }
 
