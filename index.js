@@ -61,6 +61,7 @@ class Meal{
         return cust.mealId === this.id;
       })
       const uniqueCust = [...new Set(notUniqueCust)];
+      return uniqueCust;
     }
     byPrice(){
       // a class method that orders meal instance by price in
