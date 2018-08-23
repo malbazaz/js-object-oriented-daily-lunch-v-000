@@ -43,7 +43,7 @@ class Customer{
     }
     meals(){
       return store.meals.filter(meal=>{
-          meal.deliveries().filter(delivery=>{
+          meal.deliveries().find(delivery=>{
             debugger;
             return meal.delivery.customerId === this.id;
           } )
