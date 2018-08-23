@@ -56,12 +56,12 @@ class Meal{
         return delivery.mealId === this.id;
       })
     }
-    // customers(){
-    //   const notUniqueCust = store.customers.filter(cust=>{
-    //     return cust.mealId === this.id;
-    //   })
-    //   return const uniqueCust = [...new Set(notUniqueCust)];
-    // }
+    customers(){
+      const notUniqueCust = store.customers.filter(cust=>{
+        return cust.mealId === this.id;
+      })
+      return const uniqueCust = [...new Set(notUniqueCust)];
+    }
     byPrice(){
       // a class method that orders meal instance by price in
       // descending order - user static keyword.
