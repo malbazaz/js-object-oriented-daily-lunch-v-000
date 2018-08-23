@@ -93,8 +93,8 @@ class Meal{
             debugger;
             return num1.price - num2.price;
           })
-          a class method that orders meal instance by price in
-          descending order - user static keyword.
+          // a class method that orders meal instance by price in
+          // descending order - user static keyword.
 
 }
 
