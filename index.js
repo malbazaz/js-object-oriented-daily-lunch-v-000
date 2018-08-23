@@ -42,14 +42,13 @@ class Customer{
       })
     }
     meals(){
-    return store.meals.reduce(function(meal){
+    return store.meals.reduce(function(meals,m){
         return this.deliveries().find(function(delivery){
           debugger;
               return delivery.customerId === this.id;
           }.bind(this))
-      })
 
-      return newMeals;
+      },0)
     }
 
     totalSpend(){
