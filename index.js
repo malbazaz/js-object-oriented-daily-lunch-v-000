@@ -74,7 +74,7 @@ class Meal{
           return uniqueCust;
         }
         static byPrice(){
-          store.meals.slice().sort(function(num1,num2){
+          store.meals.sort(function(num1,num2){
             debugger;
             num1.price - num2.price;
           })
