@@ -43,15 +43,12 @@ class Customer{
     }
     meals(){
     const notUniqueMeals = store.meals.filter(meal =>{
-        store.deliveries.filter(delivery=>
+        store.deliveries.filter(delivery=>{
           if(deliveryId === this.id){
             return meal.customerId === this.id;
           }
-        )
+        })
       }.bind(this))
-    const uniqueMeals = [...new Set(notUniqueMeals)]
-    debugger;
-    return uniqueMeals;
     }
     totalSpend(){
       // returns the total amt that cust spent on food
