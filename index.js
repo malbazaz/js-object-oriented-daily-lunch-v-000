@@ -22,12 +22,20 @@ class Neighborhood{
       })
     }
     meals(){
-    const notUniqueMeals = store.meals.filter(meal=>{
-        return meal.neighborhoodId === this.id;
-      })
-      const uniqueMeals = [...new Set(notUniqueMeals)]
-      return uniqueMeals;
+      return this.deliveries().map(function(delivery){
+            return store.meals.find(function(meal){
+              return meal.id === delivery.mealId
+            })
+            // debugger;
+            //     return delivery.customerId === this.id;
+            })
     }
+    // const notUniqueMeals = store.meals.filter(meal=>{
+    //     return meal.neighborhoodId === this.id;
+    //   })
+    //   const uniqueMeals = [...new Set(notUniqueMeals)]
+    //   return uniqueMeals;
+    // }
 }
 class Customer{
     constructor(name,neighborhoodId){
