@@ -43,7 +43,7 @@ class Customer{
     }
     meals(){
         return this.deliveries().forEach(function(delivery){
-          store.meals.find(function(meal){
+          return store.meals.find(function(meal){
             meal.id === delivery.mealId
           })
           // debugger;
