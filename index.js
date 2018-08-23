@@ -45,28 +45,28 @@ class Customer{
     }
 }
 
-// class Meal{
-//   constructor(title,price){
-//     this.title = title;
-//     this.price = price;
-//     this.id = ++mealId;
-//   }
-//   deliveries(){
-//     return store.deliveries.filter(delivery=>{
-//       return delivery.mealId === this.id;
-//     })
-//   }
-//   customers(){
-//     const notUniqueCust = store.customers.filter(cust=>{
-//       return cust.mealId === this.id;
-//     })
-//     return const uniqueCust = [...new Set(notUniqueCust)];
-//   }
-//   byPrice(){
-//     // a class method that orders meal instance by price in
-//     // descending order - user static keyword.
-//   }
-// }
+class Meal{
+    constructor(title,price){
+      this.title = title;
+      this.price = price;
+      this.id = ++mealId;
+    }
+    deliveries(){
+      return store.deliveries.filter(delivery=>{
+        return delivery.mealId === this.id;
+      })
+    }
+    customers(){
+      const notUniqueCust = store.customers.filter(cust=>{
+        return cust.mealId === this.id;
+      })
+      return const uniqueCust = [...new Set(notUniqueCust)];
+    }
+    byPrice(){
+      // a class method that orders meal instance by price in
+      // descending order - user static keyword.
+    }
+}
 
 class Delivery{
     constructor(mealId,neighborhoodId,customerId){
