@@ -43,8 +43,12 @@ class Customer{
     }
     meals(){
     const notUniqueMeals = store.meals.filter(meal =>{
-        return meal.customerId === this.id;
-      })
+        store.deliveries.filter(delivery=>
+          if(deliveryId === this.id){
+            return meal.customerId === this.id;
+          }
+        )
+      }.bind(this))
     const uniqueMeals = [...new Set(notUniqueMeals)]
     debugger;
     return uniqueMeals;
