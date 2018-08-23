@@ -73,8 +73,8 @@ class Meal{
     }
     customers(){
       return this.deliveries().map(function(delivery){
-            return store.meals.find(function(meal){
-              return meal.id === delivery.mealId
+            return store.customers.find(function(cust){
+              return cust.id === delivery.customerId
             })
             // debugger;
             //     return delivery.customerId === this.id;
