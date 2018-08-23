@@ -50,6 +50,9 @@ class Customer{
 
     totalSpend(){
       // returns the total amt that cust spent on food
+      this.meals.reduce(function(total,m){
+        return m.price + total
+      },0)
     }
 }
 
