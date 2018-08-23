@@ -45,7 +45,7 @@ class Customer{
     const notUniqueMeals = store.meals.filter(meal =>{
         return meal.customerId === this.id;
       })
-    const uniqueMeals = [... new Set(notUniqueMeals)]
+    const uniqueMeals = [...new Set(notUniqueMeals)]
     return uniqueMeals;
     }
     totalSpend(){
