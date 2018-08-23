@@ -47,7 +47,7 @@ class Customer{
           debugger;
               return delivery.customerId === this.id;
           }.bind(this))
-      }
+      })
     }
 
     totalSpend(){
