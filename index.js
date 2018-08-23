@@ -19,7 +19,11 @@ class Neighborhood{
         return cust.neighborhoodId === this.id;
       })
     }
-    meals(){}
+    meals(){
+      return store.meals.filter(meal =>{
+        return meal.neighborhoodId === this.id;
+      })
+    }
 }
 class Customer{
     constructor(name,neighborhoodId){
