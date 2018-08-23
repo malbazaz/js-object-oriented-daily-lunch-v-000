@@ -21,7 +21,9 @@ class Neighborhood{
       })
     }
     meals(){
-// returns unique list of meals that have been ordered
+    const notUniqueMeals = store.meals.filter(meal=>{
+        return meal.neighborhoodId === this.id;
+      })
     }
 }
 class Customer{
