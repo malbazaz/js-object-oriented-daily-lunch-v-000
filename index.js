@@ -14,7 +14,11 @@ class Neighborhood{
         return delivery.neighborhoodId === this.id;
       })
     }
-    customers(){}
+    customers(){
+      return store.customers.filter(cust =>{
+        return cust.neighborhoodId === this.id;
+      })
+    }
     meals(){}
 }
 class Customer{
