@@ -9,9 +9,11 @@ class Neighborhood{
       this.name = name;
       this.id = ++neighborhoodId;
     }
-    deliveries(){function(delivery){
-
-    }}
+    deliveries(){
+      return store.deliveries.filter(delivery =>{
+        return delivery.neighborhoodId === this.id;
+      })
+    }
     customers(){}
     meals(){}
 }
