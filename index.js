@@ -90,7 +90,7 @@ class Meal{
       //
 static byPrice(){
   debugger;
-  return this.meals().sort(function(num1,num2){
+  return store.meals.sort(function(num1,num2){
             debugger;
             return num1.price - num2.price;
           }) }
