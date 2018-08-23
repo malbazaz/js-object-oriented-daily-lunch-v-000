@@ -24,6 +24,8 @@ class Neighborhood{
     const notUniqueMeals = store.meals.filter(meal=>{
         return meal.neighborhoodId === this.id;
       })
+      const uniqueMeals = [...new Set(notUniqueMeals)]
+      return uniqueMeals;
     }
 }
 class Customer{
