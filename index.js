@@ -68,19 +68,18 @@ class Meal{
     customers(){
       const notUniqueCust = store.customers.filter(cust=>{
             debugger;
-        return cust.mealId === this.id;
-      })
-      const uniqueCust = [...new Set(notUniqueCust)];
-      return uniqueCust;
-    }
-    static byPrice(){
-      store.meals.sort(function(a,b){
-        a - b;
-      })
-      // a class method that orders meal instance by price in
-      // descending order - user static keyword.
-
-    }
+            return cust.mealId === this.id;
+          })
+          const uniqueCust = [...new Set(notUniqueCust)];
+          return uniqueCust;
+        }
+        static byPrice(){
+          store.meals.sort(function(a,b){
+            a - b;
+          })
+          // a class method that orders meal instance by price in
+          // descending order - user static keyword.
+        }
 }
 
 class Delivery{
