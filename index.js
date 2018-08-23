@@ -42,6 +42,9 @@ class Customer{
       })
     }
     meals(){
+      return store.meals.filter(meal=>{
+        return meal.customerId === this.id;
+      })
     }
     totalSpend(){
       // returns the total amt that cust spent on food
