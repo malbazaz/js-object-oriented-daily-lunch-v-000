@@ -29,12 +29,13 @@ class Neighborhood{
             // debugger;
             //     return delivery.customerId === this.id;
             })
+            const uniqueMeals = [...new Set(notUniqueMeals)]
+            return uniqueMeals;
     }
     // const notUniqueMeals = store.meals.filter(meal=>{
     //     return meal.neighborhoodId === this.id;
     //   })
-    //   const uniqueMeals = [...new Set(notUniqueMeals)]
-    //   return uniqueMeals;
+
     // }
 }
 class Customer{
