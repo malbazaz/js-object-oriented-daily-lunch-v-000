@@ -9,7 +9,9 @@ class Neighborhood{
       this.name = name;
       this.id = ++neighborhoodId;
     }
-    deliveries(){}
+    deliveries(){function(delivery){
+
+    }}
     customers(){}
     meals(){}
 }
