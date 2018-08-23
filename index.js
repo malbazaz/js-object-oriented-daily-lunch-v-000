@@ -56,6 +56,7 @@ class Meal{
       this.title = title;
       this.price = price;
       this.id = ++mealId;
+      store.meals.push(this);
     }
     deliveries(){
       return store.deliveries.filter(delivery=>{
