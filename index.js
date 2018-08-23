@@ -61,7 +61,10 @@ class Meal{
     })
     return const uniqueCust = [...new Set(notUniqueCust)];
   }
-  byPrice(){}
+  byPrice(){
+    // a class method that orders meal instance by price in
+    // descending order - user static keyword.
+  }
 }
 
 class Delivery{
@@ -71,7 +74,11 @@ class Delivery{
     this.customerId = customerId;
     this.id = ++deliveryId;
   }
-  meal(){}
+  meal(){
+    return store.meals.find(function(meal){
+      return meal.id = this.mealId;
+    }.bind(this))
+  }
   customer(){}
   neighborhood(){}
 }
