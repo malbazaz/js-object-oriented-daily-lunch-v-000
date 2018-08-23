@@ -72,19 +72,27 @@ class Meal{
       })
     }
     customers(){
-      const notUniqueCust = store.customers.filter(cust=>{
-            debugger;
-            return cust.mealId === this.id;
-          })
-          const uniqueCust = [...new Set(notUniqueCust)];
-          return uniqueCust;
-        }
+      return this.deliveries().map(function(delivery){
+            return store.meals.find(function(meal){
+              return meal.id === delivery.mealId
+            })
+            // debugger;
+            //     return delivery.customerId === this.id;
+            })
 
-        static byPrice(){
-          return this.meals().sort(function(num1,num2){
-            debugger;
-            return num1.price - num2.price;
-          })
+      // const notUniqueCust = store.customers.filter(cust=>{
+      //       debugger;
+      //       return cust.mealId === this.id;
+      //     })
+      //     const uniqueCust = [...new Set(notUniqueCust)];
+      //     return uniqueCust;
+      //   }
+      //
+      //   static byPrice(){
+      //     return this.meals().sort(function(num1,num2){
+      //       debugger;
+      //       return num1.price - num2.price;
+      //     })
           // a class method that orders meal instance by price in
           // descending order - user static keyword.
         }
