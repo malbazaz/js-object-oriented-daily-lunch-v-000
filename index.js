@@ -70,6 +70,7 @@ class Meal{
         return cust.mealId === this.id;
       })
       const uniqueCust = [...new Set(notUniqueCust)];
+      debugger;
       return uniqueCust;
     }
     byPrice(){
